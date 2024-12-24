@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'minicoreapp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A8BE517323A64654AEDC8C0BB6C1DAE0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_43CACE3A71F44DA096B2D9EC8F4BC65C }}
