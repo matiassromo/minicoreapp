@@ -19,7 +19,7 @@ def filtrar_gastos(request):
                 total_por_departamento[depto] = 0
             total_por_departamento[depto] += gasto.monto
 
-    return render(request, 'core/filtrar_gastos.html', {
+    return render(request, 'filtrar_gastos.html', {
         'gastos': gastos,
         'total_por_departamento': total_por_departamento,
     })

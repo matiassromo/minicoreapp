@@ -1,6 +1,6 @@
 from django.urls import path
-from . import views
+from .views import filtrar_gastos
 
 urlpatterns = [
-    path('filtrar_gastos/', views.filtrar_gastos, name='filtrar_gastos'),
+    path('', filtrar_gastos, name='filtrar_gastos'),
 ]

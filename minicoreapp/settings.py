@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-6rdpnb+ph=6!*w#_nw_1%t_@2sgr4u4e9a6@*quz8pe^fm291t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['minicoreapp-gxdwh8grc3ebhefh.canadacentral-01.azurewebsites.net', '127.0.0.1', 'localhost']
 
