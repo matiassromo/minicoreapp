@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-6rdpnb+ph=6!*w#_nw_1%t_@2sgr4u4e9a6@*quz8pe^fm291t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['minicoreapp-gxdwh8grc3ebhefh.canadacentral-01.azurewebsites.net', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['minicoreapp-gxdwh8grc3ehbefh.canadacentral-01.azurewebsites.net', '127.0.0.1', 'localhost']
 
 # Application definition
 
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -78,9 +79,7 @@ WSGI_APPLICATION = 'minicoreapp.wsgi.application'
 
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
+  'default': dj_database_url.config(default='postgresql://postgres:gMWLDTmXSFpWCqgkMrmnRNkQFMZHOLUS@junction.proxy.rlwy.net:31717/railway')
 }
 
 
